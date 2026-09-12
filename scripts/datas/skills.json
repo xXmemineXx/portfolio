@@ -1,0 +1,52 @@
+
+{
+    "s1" : {
+        "name" : "C",
+        "description" : ""
+    },
+
+    "s2" : {
+        "name" : "C++",
+        "description" : ""
+    },
+
+    "s3" : {
+        "name" : "C#",
+        "description" : ""
+    },
+    
+    "s4" : {
+        "name" : "PHP",
+        "description" : ""
+    },
+
+    "s5" : {
+        "name" : "css + html",
+        "description" : ""
+    },
+    
+    "s6" : {
+        "name" : "JAVA",
+        "description" : ""
+    },
+
+    "s7" : {
+        "name" : "javascript",
+        "description" : ""
+    },
+    
+    "s8" : {
+        "name" : "python",
+        "description" : ""
+    },
+
+    "s9" : {
+        "name" : "blender & aseprite",
+        "description" : ""
+    },    
+
+    "s10" : {
+        "name" : "godot + gdscript",
+        "description" : ""
+    }
+}

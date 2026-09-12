@@ -1,0 +1,32 @@
+
+{
+    "project1" : {
+        "name" : "plane manager",
+        "image" : "plane.png",
+        "description" : "a school project fully made with dotnet c# avalonia. Made by 4 persons , my role was in the view side (we used mvvm). It's purpose was to manage planes and their owning companies. flights status could be seen and new flight planning was is available in the same interface."
+    },
+
+    "project2" : {
+        "name" : "schedule manager",
+        "image" : "schedule.png",
+        "description" : ""
+    },
+
+    "project3" : {
+        "name" : "bank managment",
+        "image" : "bank.png",
+        "description" : ""
+    },
+
+    "project4" : {
+        "name" : "elvy 2d",
+        "image" : "",
+        "description" : ""
+    },
+
+    "project5" : {
+        "name" : "elvy 3d",
+        "image" : "",
+        "description" : ""
+    }
+}
