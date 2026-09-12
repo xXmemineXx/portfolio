@@ -1,16 +1,12 @@
 
 class info {
-    //properties
-    public:
-    let title = ''
-    public:
-    let path = ''
-    public:
-    let description = ''
-
-    constructor(title ,image_path, description) {
+    constructor(title ,image_path, description, type) {
         this.title = title
         this.path = image_path
         this.description = description
-    }
+        this.type = type
+
+        document.getElementById("topic").innerText = this.title
+        document.getElementById("description").innerText = this.description
+   }
 }

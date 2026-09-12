@@ -1,13 +1,11 @@
 
 class toogle_item {
-    //properties
-    public:
-    let name = ''
-    public:
-    let path = ''
 
-    constructor(name, image_path) {
+    constructor(name, image_path, div) {
         this.name = name
-        this..path = image_path
+        this.path = image_path
+        this.div = div
+        
+        this.div.innerText = name
     }
 }

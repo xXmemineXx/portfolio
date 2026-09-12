@@ -7,7 +7,14 @@
     <title>xXmemineXx</title>
 </head>
 <body>
-    <script src="./scripts/main.js"></script>
+    <!--my js dependencies-->
+    <script src="./scripts/classes/info.js"></script>
+    <script src="./scripts/classes/list_item.js"></script>
+    <script src="./scripts/classes/toogler.js"></script>
+
+    <!--main script-->
+
+    <script src="./scripts/main.js" defer></script>
     <!-- main container for the informations to read -->
     <div class="main_container">
         <div class="container_frontier">
@@ -54,7 +61,7 @@
                     <div class="curve-left"></div>
                     <div class="text">
                         <h3> description </h3>
-                        <p>
+                        <p id="description">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum impedit aliquam nobis eum, possimus quas dicta fugit a officia nesciunt dolorem facere reiciendis totam, laboriosam molestiae ab repudiandae tempore aut.
                         </p>
                     </div>
@@ -68,11 +75,13 @@
     <!-- section chooser's container -->
     <div class="holder"></div>
     <div class="chooser">
-       <div class="item1 items">
+       <div class="item0" id="view">
        </div>
-       <div class="item2 items">
+       <div class="item1 items" id="option1" onclick="topic1 = toogle(topic1)">
+       </div>
+       <div class="item2 items" id="option2" onclick="topic2 = toogle(topic2)">
        </div> 
-       <div class="item3 items">
+       <div class="item3 items" id="option3" onclick="topic3 = toogle(topic3)">
        </div> 
 
     </div>

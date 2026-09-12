@@ -99,6 +99,7 @@ body {
     text-align: center;
     perspective: 1000px;
     transition: 0.8s;
+    color: white;
 }
 
 .chooser:hover {
@@ -109,14 +110,18 @@ body {
 }
 
 .items {
-    z-index: 4;
+    z-index: 0;
     background-color: #730c1e;
     width: 60px;
     height: 60px;
     border-radius: 60px;
     opacity: 0;
     position: fixed;
-    transition: 2s;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .items:hover {
@@ -126,7 +131,7 @@ body {
 
 .chooser:hover .items {
     opacity: 1;
-    transition: 1.2s;
+    transition: 0.8s;
 }
 
 .chooser:hover .item1 {
@@ -246,7 +251,7 @@ body {
 .part2 {
     transform: translateX(50px);
     height: 30vh;
-    justify-content: center;
+    justify-content: left;
     text-align: right;
     display: flex;
     border-bottom-right-radius: 60px;
@@ -277,6 +282,10 @@ body {
     transform: rotate(-90deg) translateY(-40px);
     left: 0px;
     text-wrap-mode: nowrap;
+}
+
+.text #description {
+    width: 100%;
 }
 
 .list {
@@ -339,7 +348,12 @@ body {
 .curve-left {
     background-color: white;
     width: 100px;
+    left: 0px;
     border-top-right-radius: 60px;
+}
+
+#description {
+    text-align: right;
 }
 
 .counter-curve-left {
