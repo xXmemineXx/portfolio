@@ -6,6 +6,7 @@ class toogle_item {
         this.path = image_path
         this.div = div
         
-        this.div.innerText = name
+        this.div.innerHTML = "<img src='" + image_path + "'>" +
+                            "<p>" + this.name + "</p>"
     }
 }

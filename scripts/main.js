@@ -13,8 +13,8 @@ function toogle(_topic)
     let swap = content
 
     content = new toogle_item(_topic.name, _topic.path, document.getElementById("view"))
-    content.div.innerText = content.name
-    _topic.div.innerText = _topic.name
+    //content.div.innerText = content.name
+    //_topic.div.innerText = _topic.name
     current_info = new info(content.name, "./media/images/", "description of the current subject", content.name)
     item_list.innerHTML = ""
     item_list2.innerHTML = ""

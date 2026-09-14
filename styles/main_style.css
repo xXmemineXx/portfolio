@@ -31,6 +31,7 @@ body {
     z-index: 5;
     height: 100vh;
     width: 100vw;
+    left: 78vw;
 }
 
 .container_frontier {
@@ -89,6 +90,14 @@ body {
     color: white;
 }
 
+.chooser p {
+    display: none;
+}
+
+.chooser img {
+    transform: translateX(5px);
+}
+
 .chooser:hover {
     width: 90px;
     height: 90px;
@@ -105,13 +114,23 @@ body {
     opacity: 0;
     position: fixed;
     transition: 0.8s;
-    display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
 }
 
+.items img {
+    width: 40px;
+    height: 40px;
+    transform: translateX(-0px);
+}
+
+.items p {
+    display: none;
+}
+
 .items:hover {
+    transition: 0.3s;
     background-color: #480415;
     border: #140f17 solid 2px;
 }
@@ -126,14 +145,37 @@ body {
     position: fixed;
 }
 
+.item1:hover p{
+    transform: translateY(-100px) translateX(15px);
+    position: fixed;
+    color: black;
+    display: block;
+    transition: 0.5s;
+}
+
 .chooser:hover .item2 {
     transform: translateX(70px) translateY(-70px);
     position: fixed;
 }
 
+.item2:hover p{
+    transform: translateX(70px) translateY(-80px);
+    position: fixed;
+    color: black;
+    display: block;
+    transition: 0.5s;
+}
+
 .chooser:hover .item3 {
     transform: translateX(90px);
     position: fixed;
+}
+
+.item3:hover p {
+    display: block;
+    position: fixed;
+    color: black;
+    transform: translateY(-45px) translateX(80px);
 }
 
 .scroll_message {
@@ -240,7 +282,7 @@ body {
 }
 
 .part2 {
-    transform: translateX(50px);
+    transform: translateX(20px);
     height: 30vh;
     justify-content: left;
     text-align: right;
@@ -293,6 +335,7 @@ body {
 }
 
 .list {
+    z-index: 6;
     background-color: #730c1e;
     width: 20px;
     justify-self: center;
@@ -312,7 +355,7 @@ body {
 
 #list2 {
     transition: 0.5s;
-    right: -80px;
+    right: -50px;
 }
 
 #list2 .list-item:hover .status{
@@ -387,10 +430,89 @@ body {
 .hand h2{
     color: whitesmoke;
     top: 0px;
+    transform: translateX(50px);
 }
 
-.hand img {
-    height: 40vh;
+.hand .img {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+    animation-name: rself;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.img:hover {
+    animation-play-state: paused;
+}
+
+.magic:has(.img:hover) #img-holder{
+    animation-play-state: paused;
+}
+
+.magic:has(#img-holder:hover) .img{
+    animation-play-state: paused;
+}
+
+.actions {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: ghostwhite;
+    position: fixed;
+    transition: 1s;
+}
+
+.actions:hover {
+    background-color: #730c1e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 2s;
+}
+
+.hand:has(.actions:hover) .action-description{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#img-holder {
+    width: 20vw;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.magic {
+    left: 15vw;
+}
+
+#call {
+    transform: translateY(-60px);
+}
+
+#mail {
+    transform: translateX(51px) translateY(31px);
+}
+
+#git {
+    transform: translateX(-52px) translateY(30px);
+}
+
+.action-description {
+    bottom: 150px;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(250px);
+    color: aliceblue;
+    position: fixed;
 }
 
 /*animations*/
@@ -408,4 +530,12 @@ body {
     50%  {transform: translateX(0px) translateY(100px); background-color: #210207;}
     75%  {transform: translateX(-80px) translateY(150px); background-color: #480415;}
     100% {transform: translateX(0px) translateY(200px); background-color: #210207;}
+}
+
+@keyframes rself {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
 }
