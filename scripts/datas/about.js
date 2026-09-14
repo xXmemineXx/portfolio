@@ -1,5 +1,4 @@
-
-{
+const about = {
     "image" : "photo",
     "name" : "ANDRIANARISON Ferdino",
     "phone" : "0343293856",

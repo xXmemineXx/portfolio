@@ -235,6 +235,10 @@ body {
     width: fit-content;
 }
 
+.part1.text {
+    padding: 0px;
+}
+
 .part2 {
     transform: translateX(50px);
     height: 30vh;
@@ -260,13 +264,26 @@ body {
 .text img {
     width: 30vw;
     height: 30vh;
-    margin-bottom: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
+}
+
+#viewd {
+    position: fixed;
+    transform: rotate(0) translateY(-60px) translateX(150px);
+    color: #730c1e;
+    top: 0px;
 }
 
 .text h3 {
     color: ghostwhite;
-    transform: rotate(-90deg) translateY(-40px);
+    width: 30px;
+    justify-self: center;
+    align-self: center;
+    text-align: right;
+    height: 30px;
+    transform: rotate(-90deg) translateY(-10px) translateX(-15px);
     left: 0px;
     text-wrap-mode: nowrap;
 }
@@ -282,13 +299,24 @@ body {
     align-self: center;
     position: fixed;
     right: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     height: fit-content;
     border-radius: 20px;
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+
+#list {
+    transform: translateY(-15px);
+}
+
+#list2 {
+    transition: 0.5s;
+    right: -80px;
+}
+
+#list2 .list-item:hover .status{
+    transform: translateX(50px);
 }
 
 .list-item {
@@ -329,7 +357,7 @@ body {
     color: #140f17;
     opacity: 1;
     transition: 0.5s;
-    transform: translateX(40px);
+    transform: translateX(60px);
 }
 
 .curve-left {
@@ -352,7 +380,6 @@ body {
 .curve-right {
     background-color: white;
     width: 80px;
-    margin-left: 15px;
     left: 0px;
     border-bottom-left-radius: 60px;
 }
